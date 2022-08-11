@@ -13,7 +13,7 @@ pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesserac
 
 
 # read your file
-file = r'C:\Users\201311\Documents\GitHub\ocr_applications\3.png'
+file = r'C:\Users\berat\Documents\GitHub\ocr_applications\3.png'
 img = cv2.imread(file, 0)
 # img.shape
 
@@ -22,7 +22,7 @@ thresh, img_bin = cv2.threshold(img, 128, 255, cv2.THRESH_BINARY | cv2.THRESH_OT
 
 # inverting the image
 # img_bin = (255 - img_bin)
-cv2.imwrite(r'C:\Users\201311\Documents\GitHub\ocr_applications\cv_inverted.png', img_bin)
+cv2.imwrite(r'C:\Users\berat\Documents\GitHub\ocr_applications\cv_inverted.png', img_bin)
 # Plotting the image to see the output
 plotting = plt.imshow(img_bin, cmap='gray')
 plt.show()

@@ -2,10 +2,10 @@ import cv2
 import numpy as np
 from imutils.object_detection import non_max_suppression
 
-detector = r'C:\Users\201311\Downloads\drive-download-20220725T100439Z-001\Models\frozen_east_text_detection.pb'
+detector = r'C:\Users\berat\Downloads\drive-download-20220725T100439Z-001\Models\frozen_east_text_detection.pb'
 
 width, height = 320, 320
-image = r'C:\Users\201311\Downloads\drive-download-20220725T100439Z-001\Images\cup.jpg'
+image = r'C:\Users\berat\Downloads\drive-download-20220725T100439Z-001\Images\cup.jpg'
 
 img = cv2.imread(image)
 

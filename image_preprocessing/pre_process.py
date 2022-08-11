@@ -6,7 +6,7 @@ import pytesseract
 
 pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
 
-img = cv2.imread("C:/Users/201311/Downloads/drive-download-20220725T100439Z-001/Images/cup.jpg")
+img = cv2.imread("C:/Users/berat/Downloads/drive-download-20220725T100439Z-001/Images/cup.jpg")
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 

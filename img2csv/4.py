@@ -5,7 +5,7 @@ import csv
 
 pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
 
-img = cv2.imread(r"C:\Users\201311\Documents\GitHub\ocr_applications\3.png")
+img = cv2.imread(r"C:\Users\berat\Documents\GitHub\ocr_applications\3.png")
 
 workbook = xlsxwriter.Workbook('result.xlsx')
 worksheet = workbook.add_worksheet()

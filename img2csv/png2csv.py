@@ -7,7 +7,7 @@ pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesserac
 
 # your saved images on desktop
 list_with_many_images = [
-    r"C:\Users\201311\Documents\GitHub\ocr_applications\3.png"
+    r"C:\Users\berat\Documents\GitHub\ocr_applications\3.png"
 ]
 
 

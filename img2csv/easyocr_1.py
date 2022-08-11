@@ -18,7 +18,7 @@ print(final_text)
 #     return files
 #
 #
-# directory = r'C:\Users\201311\Documents\GitHub\ocr_applications'
+# directory = r'C:\Users\berat\Documents\GitHub\ocr_applications'
 # files_list = traverse(directory)
 #
 # images_text = {}
