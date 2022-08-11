@@ -5,7 +5,7 @@ import pytesseract
 
 pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
 
-path = 'C:/Users/201311/Documents/GitHub/ocr_applications/img_source/Images/cup.jpg'
+path = r'C:\Users\201311\Documents\GitHub\ocr_applications\1.png'
 img = cv2.imread(path)
 
 rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)

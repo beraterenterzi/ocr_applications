@@ -4,5 +4,8 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="Python 3.9 (ocr)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="s0i1tf3z861o-GettingStartedDeveloperCertification" />
+    <orderEntry type="module" module-name="image-table-ocr" />
+    <orderEntry type="module" module-name="pdf-to-csv-table-extactor" />
   </component>
 </module>
