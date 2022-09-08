@@ -16,7 +16,7 @@ def show_img(img):
     plt.show()
 
 
-img = cv2.imread(r"C:\Users\201311\Desktop\data\14.jpg")
+img = cv2.imread(r"C:\Users\201311\Desktop\ocr\data\3.jpg")
 
 original = img.copy()
 show_img(img)
@@ -36,8 +36,8 @@ show_img(blur)
 
 ### Border detection
 
-edged = cv2.Canny(blur, 60, 160)
-show_img(edged)
+# edged = cv2.Canny(blur, 60, 160)
+# show_img(edged)
 
 
 ### Contours detection
@@ -49,8 +49,7 @@ def find_contours(img):
     return conts
 
 
-conts = find_contours(edged.copy())
-
+conts = find_contours(blur.copy())
 
 for c in conts:
     perimeter = cv2.arcLength(c, True)
@@ -60,7 +59,6 @@ for c in conts:
         break
 
 print(larger)
-
 
 cv2.drawContours(img, larger, -1, (120, 255, 0), 28)
 cv2.drawContours(img, [larger], -1, (120, 255, 0), 2)
@@ -135,7 +133,6 @@ im[1][0].imshow(transform, cmap='gray')
 im[1][1].imshow(img_edges, cmap='gray')
 plt.show()
 
-
 # def transform_image(image_file):
 #     img = cv2.imread(image_file)
 #     original = img.copy()
@@ -176,5 +173,3 @@ plt.show()
 #     processed_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 #     processed_img = cv2.adaptiveThreshold(processed_img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 9)
 #     return processed_img
-
-
