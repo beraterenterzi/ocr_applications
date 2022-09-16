@@ -17,7 +17,7 @@ def img_show(img):
     plt.show()
 
 
-img = cv2.imread(r'C:\Users\201311\Desktop\ocr\data\15.jpg')
+img = cv2.imread(r'C:\Users\201311\Desktop\ocr\own\3.jpeg')
 original = img.copy()
 img_show(img)
 (H, W) = img.shape[:2]
@@ -73,3 +73,4 @@ for (box, text, probability) in result:
     # img = write_text(text, lt[0], lt[1], img, font, (0, 0, 0), 18)
 
 img_show(img)
+
