@@ -13,7 +13,7 @@ def show_img(img):
 
 
 # img = cv2.imread(r'C:\Users\201311\Desktop\data\2.jpg')
-img = cv2.imread(r'C:\Users\201311\Documents\GitHub\ocr_applications\img_source\Images\Images Project 2\book1.jpg')
+img = cv2.imread(r'C:\Users\201311\Desktop\ocr\data\33.jpg')
 original = img.copy()
 show_img(img)
 (H, W) = img.shape[:2]
@@ -21,7 +21,6 @@ print(H, W)
 
 
 def find_contours(img):
-
     conts = cv2.findContours(img, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
     conts = imutils.grab_contours(conts)
     conts = sorted(conts, key=cv2.contourArea, reverse=True)[:6]
@@ -29,7 +28,6 @@ def find_contours(img):
 
 
 def sort_points(points):
-
     points = points.reshape((4, 2))
     # print(points.shape)
     new_points = np.zeros((4, 1, 2), dtype=np.int32)
@@ -49,7 +47,6 @@ def sort_points(points):
 
 
 def transform_image(image_file):
-
     img = cv2.imread(image_file)
     original = img.copy()
     show_img(img)
@@ -90,6 +87,6 @@ def process_img(img):
     return processed_img
 
 
-img = transform_image(r'C:\Users\201311\Desktop\data\scanned.jpg')
+img = transform_image(r'C:\Users\201311\Desktop\data\33.jpg')
 img = process_img(img)
 show_img(img)

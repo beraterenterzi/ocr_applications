@@ -1,0 +1,14 @@
+pytesseract
+numpy
+opencv-python
+matplotlib
+pillow
+spacy
+wordcloud
+Jpype1
+imutils
+easyocr
+tensorflow
+keras
+pandas
+sklearn

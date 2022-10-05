@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../pdf-to-csv-table-extactor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../rest_api_python" vcs="Git" />
   </component>
 </project>

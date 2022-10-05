@@ -17,7 +17,7 @@ def img_show(img):
     plt.show()
 
 
-img = cv2.imread(r'C:\Users\201311\Desktop\ocr\own\3.jpeg')
+img = cv2.imread(r'C:\Users\201311\Desktop\ocr\data\33.jpg')
 original = img.copy()
 img_show(img)
 (H, W) = img.shape[:2]
